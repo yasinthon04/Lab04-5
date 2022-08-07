@@ -1,10 +1,8 @@
 <template>
   <div v-if="passenger">
     <div id="nav">
-      <router-link :to="{ name: 'EventDetails' }">Details</router-link>
-      |
-
-      <router-link :to="{ name: 'airlines' }">Airlines</router-link>
+      <router-link :to="{ name: 'EventDetails' }">Details</router-link> |
+      <router-link :to="{ name: 'airlines' }">Airlines</router-link> |
     </div>
 
     <router-view :passenger="passenger" :airline="airline" />
