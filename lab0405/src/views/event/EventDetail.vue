@@ -15,9 +15,11 @@ export default {
     update() {
       this.GStore.flashMessage = "You are successfully update details ";
       setTimeout(() => {
-        //After 3 seconds remove it
         this.GStore.flashMessage = "";
-      }, 3000);
+      }, 5000);
+      this.$router.push({
+        name: "home",
+      });
     },
   },
 };
